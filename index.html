@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphing Software</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="warning"></div>
+        <div class="sidebar">
+            <h2>Graphing Software</h2>
+            <input type="text" id="function-input" placeholder="Enter function (e.g., x^2)">
+            <button onclick="addFunction()">Plot</button>
+            <div id="function-list"></div>
+            <button class="clear-btn" onclick="clearGraph()">Clear All</button>
+        </div>
+        <canvas id="graphCanvas"></canvas>
+        <div id="controls">
+            <button id="zoom-in">+</button>
+            <button id="zoom-out">−</button>
+            <button id="reset">🏠</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
